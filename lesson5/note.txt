@@ -1,1 +1,5 @@
-sadsdasd
+Bài tập chưa hoàn thành :
+-Tạo Form lấy Survay khách hàng 
+-Tọa Form đơn giản 
+- tạo bảng đơn giản 
+- tạo bảng nâng cao 

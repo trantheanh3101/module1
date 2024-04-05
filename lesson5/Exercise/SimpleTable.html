@@ -3,8 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>TableBasic</title>
+    <style>
+        table{
+            font-family: Arial, sans-serif;
+        /*<!-- font-family là một thuộc tính trong CSS được sử dụng để xác định kiểu phông chữ  -->*/
+            border-collapse: collapse;
+        /*    đường viền giữa các ô trong bảng bị hợp nhất lại thành một đường viền duy nhất*/
+            width: 100%;
+        }
+        td,th {
+            border: 1px silver;
+            text-align: left;   /* căn lề trái */
+            padding: 8px;
+        /*    Thuộc tính padding trong CSS được sử dụng để thêm khoảng cách giữa nội dung của một phần tử và các đường viền của nó*/
+        }
+        /*Trong CSS, tr:nth-child là một loại bộ chọn (selector) mà bạn có thể sử dụng để chọn các phần tử
+            tr:nth-child(odd): Chọn các hàng lẻ.
+            tr:nth-child(even): Chọn các hàng chẵn.
+            tr:nth-child(n): Chọn tất cả các hàng.*/
+        tr:nth-child(even){
+            background-color: beige;
+        }
+    </style>
 </head>
 <body>
-
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Fut'terkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial MoGtezuma </td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>sland Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+    </table>
 </body>
 </html>
