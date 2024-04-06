@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onmouse</title>
+</head>
+<body>
+        <p id="mouse">Oánh nhau không</p>
+<!--    <p onmouseover="mouseover()"  onmouseout="mouseout()" id="mouse">bạn oánh nhau không </p>-->
+
+<!--    có thể dùng hamaf addEvenLisenner -->
+    <script>
+        var mouse = document.getElementById("mouse")
+        mouse.addEventListener("mouseover",mouseover);
+        mouse.addEventListener("mouseout",mouseout);
+        function mouseover() {
+            document.getElementById("mouse").style.color = "red";
+        }
+        function mouseout() {
+            document.getElementById("mouse").style.color = "blue";
+        }
+    </script>
+</body>
+</html>
