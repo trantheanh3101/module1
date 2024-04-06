@@ -1,6 +1,6 @@
 document.write("chào bạn đến trang wed")
-document.getElementById("code1").innerText="<h1>Thay Truong Tan Hai day C0324I1</h1>"
-document.getElementById("code2").innerHTML="<h1>Thay Truong Tan Hai day C0324I1</h1>"
+document.getElementById("code1").innerText="<h1>tau không thích chào mày</h1>"
+document.getElementById("code2").innerHTML="<h1>ní hảo bạn nhé </h1>"
 
 function theanh() {
     code = document.getElementById("code").value;
