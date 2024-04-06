@@ -1,0 +1,23 @@
+onload: Kích hoạt khi trang web hoặc một phần tử HTML đã được tải hoàn toàn.
+
+onclick: Kích hoạt khi một phần tử HTML được nhấp chuột.
+
+onmouseover: Kích hoạt khi con trỏ chuột đi qua một phần tử HTML.
+
+onmouseout: Kích hoạt khi con trỏ chuột rời khỏi một phần tử HTML.
+
+onchange: Kích hoạt khi giá trị của một phần tử HTML (như input, select) thay đổi.
+
+onsubmit: Kích hoạt khi một biểu mẫu HTML được gửi đi (submit).
+
+onfocus: Kích hoạt khi một phần tử HTML nhận được focus.
+
+onblur: Kích hoạt khi một phần tử HTML mất focus.
+
+onkeydown: Kích hoạt khi một phím được nhấn xuống.
+
+onkeyup: Kích hoạt khi một phím được thả ra sau khi đã được nhấn.
+
+onkeypress: Kích hoạt khi một phím được nhấn và giữ.
+
+oncontextmenu: Kích hoạt khi người dùng nhấp chuột phải để mở menu ngữ cảnh.
