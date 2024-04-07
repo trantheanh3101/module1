@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng tính diệ tích hình cữ nhật </title>
+</head>
+<body>
+    <script>
+
+        // bởi vì hàm prompt() trả giá trị nhập vào là chuỗi
+        // nên ta dùng hàm parseInt() để chuyển chuỗi thành số nguyên
+
+        NhapWidth = prompt('Bạn hãy nhập chiều rộng ');
+        let width = parseInt(NhapWidth);
+        document.write('chiều rộng là :' + width);
+        document.write('<br>')
+
+        NhapLength = prompt('Bạn hãy nhập chiều dài ');
+        let Length = parseInt(NhapLength);
+        document.write('chiều dài là : ' + Length);
+        document.write('<br>');
+
+        let area = width * Length;
+        document.write('Diện tích hình chữ nhật là : ' + area);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhtoan</title>
+</head>
+<body>
+    <p>Nhập chiều dài </p>
+    <input type="number" id="dai" >
+    <script>
+        let input = document.getElementById('dai');
+
+        input.addEventListener("keypress",function (tinhtoan) {
+            if (tinhtoan.key == "Enter") {
+                let userInput = input.value;
+                document.write(userInput);
+            }
+        })
+    </script>
+</body>
+</html>
