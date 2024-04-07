@@ -1,0 +1,28 @@
+Việc đặt các đoạn mã JavaScript ở cuối thẻ <body> thường được thực hiện nhằm tăng tốc độ hiển thị của trang web có một số lý do sau:
+
+
+
+1 .Tối ưu hóa tải trang ban đầu: Khi trình duyệt tải trang web, nó sẽ tải các tài nguyên theo thứ tự trong tài liệu HTML. 
+Khi trình duyệt gặp phải mã JavaScript, nó sẽ dừng quá trình tải trang và 
+thực hiện tải và thực thi mã JavaScript trước khi tiếp tục hiển thị phần còn lại của trang. 
+Do đó, việc đặt mã JavaScript ở cuối thẻ <body> sẽ giúp tránh trường hợp này, 
+cho phép trang web hiển thị nhanh hơn cho người dùng.
+
+
+2. Tối ưu hóa hiệu suất tải trang: 
+Đặt mã JavaScript ở cuối thẻ <body> giúp tối ưu hóa hiệu suất tải trang bằng cách cho phép các phần tử HTML cơ bản, 
+như văn bản và hình ảnh, được hiển thị ngay khi chúng đã được tải xong, 
+trong khi mã JavaScript đang được tải và thực thi trong nền. 
+Điều này giúp cải thiện trải nghiệm người dùng bằng cách giảm thời gian chờ đợi.
+
+
+3. Tránh chặn DOMContentLoaded: 
+Sự kiện DOMContentLoaded được kích hoạt khi toàn bộ tài liệu HTML đã được tải và phân tích, 
+ngay trước khi tất cả các tài nguyên như hình ảnh, các tập tin CSS, và các đoạn mã JavaScript đã được tải xong.
+ Đặt mã JavaScript ở cuối thẻ <body> giúp tránh việc chặn sự kiện DOMContentLoaded, cho phép trang web hiển thị nhanh hơn.
+
+
+Tuy nhiên, cần lưu ý rằng việc đặt các đoạn mã JavaScript ở cuối thẻ <body> không phải lúc nào cũng là lựa chọn tốt nhất, 
+đặc biệt là đối với các ứng dụng web phức tạp và yêu cầu mã JavaScript hoạt động ngay từ đầu. 
+Trong những trường hợp như vậy, việc sử dụng các kỹ thuật tối ưu hóa tải trang khác như 
+sử dụng các thuộc tính async hoặc defer, hoặc sử dụng công cụ xây dựng (build tools) như Webpack có thể là lựa chọn hợp lý hơn.
