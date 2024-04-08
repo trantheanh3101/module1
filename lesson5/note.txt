@@ -1,5 +1,5 @@
 Bài tập chưa hoàn thành :
 -Tạo Form lấy Survay khách hàng 
--Tọa Form đơn giản 
+-Tọa Form đơn giản          Form1
 - tạo bảng đơn giản 
 - tạo bảng nâng cao 
