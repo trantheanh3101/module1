@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra điểm nhập của học viên </title>
+</head>
+<body>
+  <input type="number" id="point" placeholder="Nhập điểm">
+  <button type="button" onclick="Check()" >Nhập</button>
+  <p id="kq"></p>
+  <script>
+  function Check() {
+    let pointhv = document.getElementById("point").value;
+    if (pointhv>=75){
+      document.getElementById("kq").innerHTML = "Kết quả của học viên : Pass module"
+    }else {
+      document.getElementById("kq").innerHTML = "Kết quả của học viên: Fail module"
+    }
+  }
+  </script>
+</body>
+</html>
