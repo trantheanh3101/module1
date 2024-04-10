@@ -11,11 +11,16 @@
   <script>
   function Check() {
     let pointhv = document.getElementById("point").value;
-    if (pointhv>=75){
-      document.getElementById("kq").innerHTML = "Kết quả của học viên : Pass module"
-    }else {
-      document.getElementById("kq").innerHTML = "Kết quả của học viên: Fail module"
-    }
+        if (pointhv >= 75) {
+            document.getElementById("kq").innerHTML = "Kết quả của học viên : Pass module"
+        } else {
+            document.getElementById("kq").innerHTML = "Thi lại lần hai ";
+            let pointhc2 = document.getElementById("point").value;
+            if (pointhc2>=75){
+                document.getElementById("kq").innerHTML = "Kết quả của học viên : Pass module"
+            } else {
+                document.getElementById("kq").innerHTML = "trượts ";}
+        }
   }
   </script>
 </body>

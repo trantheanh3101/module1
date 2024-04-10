@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính đơn giản </title>
+    <style>
+        fieldset{
+            text-align: left;
+            width: 280px;
+            height: 250px;
+            border: 5px solid black;
+            padding: 10px;
+        }
+        input {
+            width: 270px;
+            height: 40px;
+            text-align: right;
+            font-family: "Times New Roman";
+            font-size: 30px;
+        }
+        button{
+            width: 45px;
+            height: 38px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            margin-top: 6px;
+            color: blue;
+            font-family: "Times New Roman";
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Máy tính cơ bản </h1>
+    <form>
+        <fieldset>
+            <input id="display" type="text">
+            <table>
+                <tr>
+                    <td><button type="button" value="1" onclick="inputvalue(this.value)">1</button></td>
+                    <td><button type="button" value="2" onclick="inputvalue(this.value)">2</button></td>
+                    <td><button type="button" value="3" onclick="inputvalue(this.value)">3</button></td>
+                    <td><button type="button" value="+" onclick="inputvalue(this.value)">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="4" onclick="inputvalue(this.value)">4</button></td>
+                    <td><button type="button" value="5" onclick="inputvalue(this.value)">5</button></td>
+                    <td><button type="button" value="6" onclick="inputvalue(this.value)">6</button></td>
+                    <td><button type="button" value="-" onclick="inputvalue(this.value)">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="7" onclick="inputvalue(this.value)">7</button></td>
+                    <td><button type="button" value="8" onclick="inputvalue(this.value)">8</button></td>
+                    <td><button type="button" value="9" onclick="inputvalue(this.value)">9</button></td>
+                    <td><button type="button" value="*" onclick="inputvalue(this.value)">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="C" onclick="xoa()">C</button></td>
+                    <td><button type="button" value="0" onclick="inputvalue(this.value)">0</button></td>
+                    <td><button type="button" value="=" onclick="kq()">=</button></td>
+                    <td><button type="button" value="/" onclick="inputvalue(this.value)">/</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <script src="9_5_maytinh.js"></script>
+</body>
+</html>

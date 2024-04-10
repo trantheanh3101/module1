@@ -6,20 +6,42 @@
 </head>
 <body>
     <script>
-        let a = parseInt(prompt('a?',''));
-        switch (a) {
-            case 0:
-                alert('0');
-                break;
+         let month = parseInt(prompt('month cần :',''));
+        switch (month) {
             case 1:
-                alert('1');
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert('Tháng này có 31 ngày ');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert('Tháng này có 30 ngày');
                 break;
             case 2:
-            case 3:
-                alert('2,3');
+                let year = parseInt(prompt("Enter a year"));
+                if (year % 4 == 0) {
+                    if (year % 100 == 0) {
+                        if (year % 400 == 0) {
+                            alert(year + " is a leap year nên tháng này có 29 ngày");
+                        } else {
+                            alert(year + " is NOT a leap year nên tháng này có 28 ngày ");
+                        }
+                    } else {
+                        alert(year + " is a leap year nên tháng này có 29 ngày");
+                    }
+                } else {
+                    alert(year + " is NOT a leap year nên tháng này có 28 ngày");
+                }
+                // alert('Tháng ngày có 28 hoặc 29 ngày ');
                 break;
             default :
-                alert('ko có gia trị thỏa mãn')
+                alert('ưu cầu nhập lại tháng ')
                 break;
         }
     </script>
