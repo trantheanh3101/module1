@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lương </title>
+</head>
+<body>
+    <script>
+        let luong = +prompt("Nhập lương: ");
+        let gioLamViec = +prompt("Nhập số giờ: ");
+
+        if (gioLamViec >= 200) {
+            thuong = 0.2 * luong;
+        } else if (gioLamViec >= 100 && gioLamViec < 200) {
+            thuong = 0.1 * luong;
+        } else {
+            thuong = 0;
+        }
+        document.write("tiền thưởng : " + thuong.toFixed(4));
+    </script>
+</body>
+</html>

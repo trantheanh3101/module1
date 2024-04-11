@@ -16,12 +16,12 @@
 
     <script>
         function tinh_CV_DT() {
-            const pi = 3.14;
+            const PI = 3.14;
             var bankinh = parseFloat(document.getElementById("bk").value)
             // var cv = 2 * Math.PI * bankinh;
             // var dt = Math.PI * Math.PI * bankinh;
-            var cv = 2 * pi * bankinh;
-            var dt = pi * pi *bankinh;
+            var cv = 2 * PI * bankinh;
+            var dt = PI * PI *bankinh;
             document.getElementById("chuvi").innerHTML = "Chu vi của hình tròn là : " + cv.toFixed(3);
             document.getElementById("dientich").innerHTML = "Diện tích của hình tròn là : " + dt.toFixed(3);
         }

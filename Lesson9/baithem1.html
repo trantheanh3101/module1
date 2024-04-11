@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra tam giác vuong can</title>
+</head>
+<body>
+    <script>
+      const a = +prompt("cạnh a: ");
+      const b = +prompt("cạnh b: ");
+      const c = +prompt("cạnh c: ");
+
+      // điều kiện
+      if (a + b > c && a + c > b && b + c > a) {
+        // kt vuong
+        if (a * a + b * b === c * c || a * a + c * c === b * b || b * b + c * c === a * a) {
+          // kt can
+          if (a === b || a === c || b === c) {
+            document.write("tam giác vuông cân.");
+          } else {
+            document.write("là tam giác, nhưng k là tam giác vuông cân.");
+          }
+        } else {
+          document.write("là tam giác, nhưng k là tam giác vuông cân.");
+        }
+      } else {
+        document.write("Ba cạnh ko đúng.");
+      }
+
+    </script>
+</body>
+</html>
