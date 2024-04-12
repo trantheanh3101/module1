@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hjkhj</title>
+</head>
+<body>
+<!--    <script>-->
+<!--        let c=0;-->
+<!--        let count = 0;-->
+<!--        for (let N = 2; N < 1000 ;N++) {-->
+<!--            // let N1 = ~~Math.sqrt(N);-->
+<!--            if (c<10) {  // kiểm tra số lượng số nguyên tố đã in ra-->
+<!--                for (let i = 1; i <= N/2; i++) {        // kiểm tra -->
+<!--                    if (N % i == 0) {-->
+<!--                        count += 1;-->
+<!--                    }-->
+<!--                }-->
+<!--                // kiểm tra số ước của N (2 ước &ndash;&gt; số nguyên tố ) xong đó in ra no-->
+<!--                if (count == 2) {-->
+<!--                    document.write(N + " ")-->
+<!--                    c = c+1;-->
+<!--                }-->
+<!--                count = 0;-->
+<!--            } else {-->
+<!--                break;-->
+<!--            }-->
+<!--        }-->
+<!--      </script>-->
+
+<script>
+    let count=0;
+    let start=+prompt("moi nhap vao so bat dau");
+    let number= +prompt("moi nhap vao so luong so nguyen to can thiet")
+    while (count<number){
+        if (checkPrime(start)){
+            document.write(start+" ");
+            count++;
+        }
+        start++;
+    }
+
+    function checkPrime(n){
+        //     tra ve true neu la so nguyen to
+        //     tra false neu ko la so nguyen to
+        if (n<2) return false;
+        if (n<4) return true;
+        for (let i = 2; i < n/2; i++) {
+            if (n%i===0) return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
