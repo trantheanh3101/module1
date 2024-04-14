@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day fibonacci</title>
+</head>
+<body>
+    <script>
+      let a = 0;
+      let b = 1;
+
+      for (let i = 2; i <= 20; i++) {
+        document.write(b); // Hiển thị số Fibonacci hiện tại
+        let temp = b;
+        b = a + b;
+        a = temp;
+      }
+
+      // let a1 = 0;s
+      // let a2 = 1;
+      // let j = 1;
+      // let an = 1;
+      // do {
+      //   document.write(an + "--- số thứ " + j +"<br>");
+      //   an = a1 + a2;
+      //   a1 = a2 ;
+      //   a2 = an;
+      //   j++
+      // }while (j<=20)
+    </script>
+</body>
+</html>

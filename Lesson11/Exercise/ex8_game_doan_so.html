@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game đoán số</title>
+</head>
+<body>
+    <button type="button" onclick="checkk()">Đoán nào </button>
+    <script>
+
+        function checkk() {
+            let max = +prompt('Nhập giới hạn trên của khoảng');
+            let ok = Math.floor(Math.random()* max);
+            let count = 0;
+
+            for (let i = 0; i <3 ; i++) {
+                let choose = +prompt('Nhập số bạn đoán :');
+                if (choose === ok){
+                    alert('chúng mừng bạn đã đoán chúng');
+                    break;
+                } else if (choose > ok){
+                    alert('số bạn chọn lớn hơn ');
+                }   else {
+                    alert('số bạn chọn nhỏ hơn ')
+                }
+                count ++;
+            }
+            if (count === 3){
+                alert('bạn hết số lần đoán ')
+            }
+        }
+    </script>
+</body>
+</html>

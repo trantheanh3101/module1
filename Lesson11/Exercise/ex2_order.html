@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yêu cầu </title>
+</head>
+<body>
+    <script>
+        let temp = +prompt("nhập nhiệt độ hiện tại : ");
+
+        // if (temp < 20){
+        //     alert("yêu vầu tang nhiệt độ ");
+        //     temp = prompt("Đo lại ")
+        // } else if (temp > 80) {
+        //     alert("yêu vầu giảm nhiệt độ ");
+        //     temp = prompt("Đo lại ");
+        // } else {
+        //     alert("nhiệt độ tốt ")
+        // }
+
+        while (temp <20 || temp > 80){
+            if (temp < 20){
+                alert("yêu vầu tang nhiệt độ ");
+            } else if (temp > 80) {
+                alert("yêu vầu giảm nhiệt độ ");
+            }
+            temp = +prompt("đo LẠI ");
+        }
+        alert("ok");
+    </script>
+</body>
+</html>

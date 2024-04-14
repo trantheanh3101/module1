@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng dãy fibonacii</title>
+</head>
+<body>
+    <script>
+        let a = 0;
+        let b = 1;
+        let sum =0;
+        let n = parseInt(prompt("nhập : "))
+        for (let i = 1; i <= n; i++) {
+            sum = sum + b;
+            let trans = b;
+            b = a + b ;
+            a = trans;
+        }
+        document.write("tổng của " + n + " số đầu tiên trong dãy là : sum = " + sum);
+        // document.write(sum);
+    </script>
+</body>
+</html>

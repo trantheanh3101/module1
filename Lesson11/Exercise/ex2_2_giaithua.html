@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giai thừa của 1 số nguyên dương</title>
+</head>
+<body>
+    <script>
+        let N = prompt("nhập sống nguyên dương");
+        let tich = 1;
+        for (let i = 1 ;i <= N ;i++){
+            tich = tich * i;
+        }
+        document.write(tich);
+
+
+
+        // đệ quy
+        // function fr(n) {
+        //     if (n === 0 || n === 1){
+        //         return 1;
+        //     } else {
+        //         return n * fr(n-1);
+        //     }
+        // }
+        // let number = 5;
+        // document.write(fr(number));
+    </script>
+</body>
+</html>

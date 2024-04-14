@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số 1st chia hết 5 trong day fibonacci</title>
+</head>
+<body>
+  <script>
+    let a = 0;
+    let b = 1;
+    let c = parseInt(prompt('nhập vị trí số cần tìm : '));
+    let count = 0;
+    for (let i = 2; i <= 20; i++) {
+      let temp = b;
+      b = a + b;
+      a = temp;
+      if (b%5 === 0){
+        count ++;
+        if (count === c){
+          document.write("số cân tìm là : " + b)
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

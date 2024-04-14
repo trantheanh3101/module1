@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tam giác vuông</title>
+</head>
+<body>
+    <script>
+        sum1 = "";
+        for (let i = 0; i < 5; i++) {
+            sum1 += '*';
+            document.write(sum1 + "<br>");
+        }
+
+
+
+
+        for (let j = 1; j <=5  ; j++) {
+            sum2 = "";
+            for (let i = 1; i <= 5; i++) {
+                if (i <= 5 - j) {
+                    sum2 += '';
+                }else {
+                    sum2 += "*";
+                }
+            }
+            document.write(sum2 + "<br>");
+        }
+
+    </script>
+</body>
+</html>

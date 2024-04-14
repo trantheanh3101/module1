@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính 30 số chia hết cho 7 đầu tiên</title>
+</head>
+<body>
+    <script>
+        let sum = 0;
+        let count = 0;
+        let N = parseInt(prompt("nhâp số :")) ;
+        for (let i = 1;; i++) {
+            if (i%7 === 0){
+                sum = sum + i ;
+                count++;
+                if (count === N) {
+                    document.write("tổng " + N + " số chia hết 7 đầu tiên : sum = " + sum)
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
