@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vẽ hình c chữ nhật </title>
+</head>
+
+<body>
+    <pre id="hcn"></pre>
+<!--dùng thẻ pre để có thể in được các khoảng trắng trong vawn bản-->
+    <script>
+        // xem hình cữ nhật taoh thaành từ 1 chuỗi : *xm \n *"x(m-2)"* \n *xm
+
+        document.getElementById('hcn').innerText = printhcn();
+
+        function printhcn() {
+            let dai = 21;
+            let rong = 7;
+
+            var hcn1 ="";
+
+            for (let i = 1; i <= dai; i++) {
+                hcn1 += "*";
+            }
+            hcn1 += "\n";
+
+            for (let j = 1; j < rong - 1; j++) {
+                hcn1 += "*";
+                for (let m = 1; m < dai - 1; m++) {
+                    hcn1 += " ";
+                }
+                hcn1 += "*\n"
+            }
+
+            if (rong > 1) {
+                for (let n = 0; n < dai; n++){
+                    hcn1 += "*";
+                }
+                hcn1 += "\n";
+            }
+            return hcn1;
+        }
+
+    </script>
+</body>
+</html>

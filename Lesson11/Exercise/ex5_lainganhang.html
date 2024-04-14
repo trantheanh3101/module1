@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi xuất ngân hàng</title>
+</head>
+<body>
+  <input id="start" placeholder="Nhập số tiền vay"><p></p>
+  <input id="month" placeholder="Nhập số tháng vay"><p></p>
+  <input id="rate" placeholder="lãi suất hằng tháng"><p></p>
+  <button type="button" onclick="Tinh()">Tính</button><p></p>
+  <p id="kq"></p>
+
+  <script>
+    function Tinh() {
+      let money = parseInt(document.getElementById('start').value);
+      let month = parseInt(document.getElementById('month').value);
+      let rate = parseFloat(document.getElementById('rate').value);
+      let total = money;
+
+      // total = money*Math.pow((1 + rate),month);
+
+      for (let i = 1; i <= month; i++) {
+        total += total*rate;
+      }
+      document.getElementById('kq').innerHTML ="Số tiền cần trả l : " + total.toFixed(0);
+    }
+
+
+  </script>
+</body>
+</html>

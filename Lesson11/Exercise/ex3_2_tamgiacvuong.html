@@ -3,30 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>tam giác vuông</title>
+    <style>
+        pre {
+            color: black;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
+    <pre id="tg1"></pre>
+    <pre id="tg2"></pre>
+    <pre id="tg3"></pre>
+    <pre id="tg4"></pre>
     <script>
-        sum1 = "";
-        for (let i = 0; i < 5; i++) {
-            sum1 += '*';
-            document.write(sum1 + "<br>");
-        }
-
-
-
-
-        for (let j = 1; j <=5  ; j++) {
-            sum2 = "";
-            for (let i = 1; i <= 5; i++) {
-                if (i <= 5 - j) {
-                    sum2 += '';
-                }else {
-                    sum2 += "*";
+        document.getElementById('tg1').textContent = tamgiac1();
+        document.getElementById('tg2').innerText = tamgiac2();
+        document.getElementById('tg3').innerText = tamgiac3();
+        document.getElementById('tg4').innerText = tamgiac4();
+        function tamgiac1() {
+            let sum1 = "";
+            for (let j = 1; j <= 5; j++) {
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= j) {
+                        sum1 += '*';
+                    } else {
+                        sum1 += " ";
+                    }
                 }
+                sum1 += "\n";
             }
-            document.write(sum2 + "<br>");
+            return sum1;
+        }
+        function tamgiac2() {
+            let sum2 = "";
+            for (let j = 0; j < 5; j++) {
+                for (let i = 5; i >= 1; i--) {
+                    if (i <= 5 - j) {
+                        sum2 += '*';
+                    } else {
+                        sum2 += "";
+                    }
+                }
+                sum2 += "\n";
+            }
+            return sum2;
         }
 
-    </script>
+        function tamgiac3() {
+            let sum3 = "";
+            for (let j = 1; j <= 5; j++) {
+                for (let i = 5; i >= 1; i--) {
+                    if (i <= j) {
+                        sum3 += '*';
+                    } else {
+                        sum3 += " ";
+                    }
+                }
+                sum3 += "\n";
+            }
+            return sum3;
+        }
+            function tamgiac4() {
+                let sum4 = '';
+                for (let j = 1; j <= 5; j++) {
+                    for (let i = 1; i <= 5; i++) {
+                        if (i >= j) {
+                            sum4 += '*';
+                        } else {
+                            sum4 += ' ';
+                        }
+                    }
+                    sum4 += "\n";
+                }
+                return sum4;
+            }
+            </script>
 </body>
 </html>
