@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trn mảng lớn nhất</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50,300,60,70,80,90,100];
+        let max = arr[0];
+        let t = 0;
+        for (let i = 1; i <= arr.length; i++) {
+            if (arr[i] > max){
+                max = arr[i];
+                t = i;
+            }
+        }
+        document.write("Gía trị lớn nhất trong mảng là arr[" + t + "] = " + max)
+    </script>
+</body>
+</html>

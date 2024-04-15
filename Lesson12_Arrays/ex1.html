@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vi dụ 1</title>
+</head>
+<body>
+    <script>
+        let array = ["t1","t3","t2","t4"];
+        for (let i = 0; i < array.length; i++) {
+            document.write(array[i] + "<br>");
+        }
+
+        array.forEach(function(t) {
+            document.write(t +"<br>");
+        })
+
+        array.push('t5');  // thêm phần tử cuối mảng
+        document.write(array + "<br>");
+
+        array.unshift('t0');  ///  thêm phần tử đầu mảng
+        document.write(array + "<br>");
+
+        array.pop();  // xóa phaanf tử cuối cùng
+        document.write(array + "<br>");
+
+        array.shift();  // xóa phần tư đầu tiên
+        document.write(array + "<br>");
+
+        array.sort();   // sắp xếp trật tự
+        document.write(array + "<br>");
+
+        array.reverse();  // đảo ngược mảng
+        document.write(array + "<br>");
+
+
+
+        let points = [40, 100, 1, 5, 25, 10];
+        function k(a,b) {
+            return b - a ;
+        }
+        points.sort(k);
+        document.write(points);
+    </script>
+</body>
+</html>

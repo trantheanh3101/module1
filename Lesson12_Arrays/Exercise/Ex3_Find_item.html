@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm phần tử trong mảng </title>
+</head>
+<body>
+  <script>
+    // let arr = [10,20,30,40,50,60,70,80,90,100];
+    // let num = +prompt('Nhập số cần tìm');
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] == num){
+    //       alert('Số này đã có trong mảng');
+    //       break;
+    //     }
+    // }
+
+    let arr = [10,20,30,40,50,60,70,80,90,100];
+    let num = +prompt('Nhập số cần tìm');
+    let check = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === num){
+        check = 1;
+      }
+    }
+    if (check === 1){
+        alert('số này cs trong mảng ')
+    }else {
+      alert('số này ko có trong mảng')
+    }
+
+
+  </script>
+</body>
+</html>
