@@ -11,4 +11,3 @@ function Display() {
     }
     document.getElementById('kq').innerHTML = array;
 }
-
