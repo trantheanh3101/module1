@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra int lớn hơn 10</title>
+</head>
+<body>
+    <script>
+        let arrayInt = new Array(5,6,8,60,15,30,1,7,4,42);
+        let count = 0;
+        let arr10 =[];
+        for (let i = 0; i < arrayInt.length; i++) {
+            if(arrayInt[i]>=10){
+                arr10.push(arrayInt[i]);
+                count++;
+            }
+        }
+        document.write("Có " + count + " số nguyêsn >=10 rong mảng : "+ arr10.join("-"))
+    </script>
+</body>
+</html>

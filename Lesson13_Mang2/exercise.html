@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập</title>
+</head>
+<body>
+    <script>
+        let x =[
+            [2,4,5],
+            [3,4,5],
+            [6,7,8]
+        ];
+        for (let j = 0; j < x.length; j++) {
+            let sumrow = 0;
+            for (let i = 0; i < x[j].length; i++) {
+                sumrow += x[j][i];
+            }
+            document.write("tổng hàng thứ " + j + "là : " + sumrow + "<br>");
+        }
+
+        for (let i = 0; i < x.length; i++) {
+            let sumcol =0;
+            for (let j = 0; j < x[i].length; j++) {
+                sumcol += x[j][i];
+            }
+            document.write("tổng cột thứ " + i + "là : " + sumcol + "<br>");
+        }
+
+        // x00 x11 x22   x02  x11 x20
+        // let sumcheo =0 ;
+        // for (let i = 0; i < x.length; i++) {
+        //     for (let j = 0; j < x[i].length; j++) {
+        //         if(i == j){
+        //             sumcheo += x[i][j];
+        //         }
+        //     }
+        //     // document.write("tổng chéo thứ " + i + "là : " + sumcheo + "<br>");
+        // }
+        // document.write("tổng chéo thứ " + i + "là : " + sumcheo + "<br>");
+
+        let sum =0;
+        for (let i = 0; i < x.length; i++) {
+            sum+=x[i][i];
+        }
+        document.write(sum +"<br>");
+
+         let sum2=0;
+        for (let i = 0; i < x.length; i++) {
+            sum2+=x[i][x.length-1-i];
+        }
+        document.write(sum2);
+    </script>
+</body>
+</html>
