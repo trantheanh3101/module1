@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển thường thành in </title>
+</head>
+<body>
+    <script>
+        // hàm indexOf() : nếu kết quả trả về false thì nó trả về giá trị số -1
+        stringd = 'cDReh';
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        var result = [];s
+
+        for(var i=0; i<stringd.length; i++) {
+            if(UPPER.indexOf(str[i]) !== -1) {
+                result.push(str[i].toLowerCase());
+            } else if(LOWER.indexOf(str[i]) !== -1) {
+                result.push(str[i].toUpperCase());
+            } else {
+                result.push(str[i]);
+            }
+        }
+       document.write(result.join(''));
+    </script>
+</body>
+</html>

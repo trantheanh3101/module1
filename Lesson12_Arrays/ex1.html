@@ -7,18 +7,32 @@
 <body>
     <script>
         let array = ["t1","t3","t2","t4"];
-        for (let i = 0; i < array.length; i++) {
-            document.write(array[i] + "<br>");
-        }
+        // for (let i = 0; i < array.length; i++) {
+        //     document.write(array[i]);
+        // }
 
+        let newa = array;
+        newa[2] = 0;
+        document.write(array);
+
+        document.write("<br>");
+        document.write(newa);
+
+        // newa và array có kp giống nhau vì : -  cùng chung bọ nhớ và newa copy lại array
+        // nên newa thay đổi như nào thì thằng array cũng thay đổi theo
+
+
+        document.write("<br>");
+        document.write(array);
+        document.write("<br>");
         array.forEach(function(t) {
             document.write(t +"<br>");
         })
 
-        array.push('t5');  // thêm phần tử cuối mảng
+        array.push('t5','t6','t7');  // thêm phần tử cuối mảng
         document.write(array + "<br>");
 
-        array.unshift('t0');  ///  thêm phần tử đầu mảng
+        array.unshift('t0','t-1','t-2');  ///  thêm phần tử đầu mảng
         document.write(array + "<br>");
 
         array.pop();  // xóa phaanf tử cuối cùng

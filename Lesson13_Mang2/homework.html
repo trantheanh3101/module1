@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>điểm trung bình của tất cả cac học sinh</title>
+</head>
+<body>
+    <script>
+        let studentName = [];
+        let studentScore = [];
+        let numStudent = parseInt(prompt("Nhập số lượng học sinh:"));
+        for (let i = 0; i < numStudent; i++) {
+            let name = prompt("Nhập tên của học sinh " + (i+1));
+            let point;
+            do {
+                point = parseFloat(prompt("Nhập điểm của học sinh " + name));
+            } while (isNaN(point) || point < 0 || point > 10);
+            studentName.push(name);
+            studentScore.push(point);
+        }
+        document.write("Thông tin về học sinh và điểm:" + "<br>");
+        for (let i = 0; i < numStudent; i++) {
+            document.write("Học sinh " + studentName[i] + " có điểm là "  + studentScore[i] + "<br>" );
+        }
+        let sum = 0;
+        let Tb = 0;
+        for (let j = 0; j < studentScore.length; j++) {
+            sum += studentScore[j];
+        }
+        Tb = sum/(studentScore.length);
+        document.write('Điểm trung bình của các học sinh là : '+ Tb);
+    </script>
+</body>
+</html>
