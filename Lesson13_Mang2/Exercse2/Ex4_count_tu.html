@@ -6,17 +6,27 @@
 </head>
 <body>
     <script>
-        let chuoi = "        i am playing foodball         ";
-        let arr = [];
-        function trimspace() {
-            chuoi = chuoi.trim(); //// xóa khoảng trắng ở đầu và cuối chuỗi
+        // let chuoi = "        i am  playing foodball         ";
+        // var num = trimspace();
+        // document.write(num);
+        // function trimspace() {
+        //     chuoi = chuoi.trim(); //// xóa khoảng trắng ở đầu và cuối chuỗi
+        //     if (chuoi === 0){
+        //         return 0;
+        //     }
+        //     // kiểm tra space
+        //     let array = chuoi.split(/\s+/);
+        //     // phương thức split : chia chuỗi thành các phần tử
+        //       // \s: Phân loại tất cả các ký tự khoảng trắng, bao gồm dấu cách, tab và các ký tự xuống dòng.
+        //      // \s+: Phân loại tất cả các chuỗi ký tự khoảng trắng liên tiếp (bao gồm cả dấu cách, tab và cácn = array.length;
+        //     let n = array.length;
+        //     return n;
+        // }
 
-            if (chuoi === 0){
-                return 0;
-            }
-
-
-        }
+        let chuoi = prompt();
+        chuoi = chuoi.trim();
+        chuoi = chuoi.split(/\s+/);
+        document.write(chuoi.length);
     </script>
 </body>
 </html>
