@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra kí tự số trong mảng</title>
+</head>
+<body>
+    <script>
+      let arrayInt =[];
+      let n = parseInt(prompt("nhập số lượng integer : "))
+      let item = "";
+      for (let i = 0; i < n; i++) {
+        item = prompt("nhập item thứ " + (i+1));
+        arrayInt.push(item);
+      }
+      document.write( "Mảng khởi tạo: " + arrayInt);
+      document.write("<br>");
+
+      let num = [];
+      let count = 0;
+      for (let i = 0; i < arrayInt.length; i++) {
+        if (!isNaN(arrayInt[i])){
+          num.push(arrayInt[i]);
+          count++;
+        }
+      }
+      document.write("array number : " + num + "<br>");
+      document.write("số lượng kí tự số là : " + num.length)
+      document.write("<br>");
+      document.write(count);
+    </script>
+</body>
+</html>

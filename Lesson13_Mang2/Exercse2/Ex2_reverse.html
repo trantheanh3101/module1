@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược</title>
+</head>
+<body>
+    <script>
+        let arrayInt =[];
+        let n = parseInt(prompt("nhập số lượng integer : "))
+        let item = "";
+        for (let i = 0; i < n; i++) {
+            item = prompt("nhập item thứ " + (i+1));
+            arrayInt.push(item);
+        }
+        document.write( "Mảng khởi tạo: " + arrayInt);
+        document.write("<br>");
+
+        let tg = "";
+        for (let i = 0; i < arrayInt.length/2 ; i++) {
+            tg = arrayInt[i];
+            arrayInt[i]=arrayInt[arrayInt.length-i-1];
+            arrayInt[arrayInt.length-i-1]=tg;
+        }
+        document.write("Mảng sau khi đảo: "+arrayInt.join(""));
+    </script>
+</body>
+</html>

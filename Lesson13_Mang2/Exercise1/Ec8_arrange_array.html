@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>săp xếp mảng </title>
+</head>
+<body>
+    <script>
+        let arrayInt =[];
+        let n = parseInt(prompt("nhập số lượng integer : "))
+        for (let i = 0; i < n; i++) {
+            let randomNum = Math.floor(Math.random()*101);
+            arrayInt.push(randomNum);
+        }
+        document.write(arrayInt);
+        document.write("<br>");
+
+        function k(a,b) {
+            return b - a ;
+        }
+        arrayInt.sort(k);
+        document.write(arrayInt);
+
+    </script>
+</body>
+</html>

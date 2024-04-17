@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nối mảng </title>
+</head>
+<body>
+    <script>
+        let arrayInt =[];
+        let arrayInt1 =[];
+        let n = parseInt(prompt("nhập số lượng integer : "))
+        for (let i = 0; i < n; i++) {
+            let randomNum = Math.floor(Math.random()*101);
+            arrayInt.push(randomNum);
+        }
+        document.write(arrayInt);
+        document.write("<br>");
+
+
+        for (let j = 0; j < n; j++) {
+            let randomNum = Math.floor(Math.random()*101);
+            arrayInt1.push(randomNum);
+        }
+        document.write(arrayInt1);
+        document.write("<br>");
+
+        let c = arrayInt1.concat(arrayInt);
+        document.write(c);
+
+    </script>
+</body>
+</html>

@@ -9,9 +9,9 @@
         let studentName = [];
         let studentScore = [];
         let numStudent = parseInt(prompt("Nhập số lượng học sinh:"));
+        let point = 0;
         for (let i = 0; i < numStudent; i++) {
             let name = prompt("Nhập tên của học sinh " + (i+1));
-            let point;
             do {
                 point = parseFloat(prompt("Nhập điểm của học sinh " + name));
             } while (isNaN(point) || point < 0 || point > 10);

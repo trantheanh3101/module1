@@ -12,9 +12,9 @@
             let max = +prompt('Nhập giới hạn trên của khoảng');
             let ok = Math.floor(Math.random()* max);
             let count = 0;
-
+            let choose ;
             for (let i = 0; i <3 ; i++) {
-                let choose = +prompt('Nhập số bạn đoán :');
+                choose = +prompt('Nhập số bạn đoán :');
                 if (choose === ok){
                     alert('chúng mừng bạn đã đoán chúng');
                     break;
