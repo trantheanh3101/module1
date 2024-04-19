@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm gia trị min trong mảng</title>
+</head>
+<body>
+  <script>
+    let arr = [];
+    let n = +prompt("sl item on array");
+    for (let i = 0; i < n; i++) {
+      arr.push(prompt("item " + i));
+    }
+    document.write(arr+ "<br>");
+
+
+    let pos = minArray(arr);
+    if (pos === -1){
+      document.write("array empty");
+    } else {
+      document.write("position min array is : " + pos );
+    }
+
+    function minArray(post) {
+      let pos = 0;
+      let min = arr[0];
+
+      if (arr.length === 0){
+        return -1;
+      }
+
+      for (let i = 1; i < arr.length; i++) {
+        if (min>arr[i]){
+          min = arr[i];
+          pos = i;
+        }
+      }
+      return pos;
+    }
+  </script>
+</body>
+</html>
