@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra số nguyên tố </title>
+</head>
+<body>
+  <script>
+    function checkPrime(n){
+      //     tra ve true neu la so nguyen to
+      //     tra false neu ko la so nguyen to
+      if (n<2) return false;
+      if (n<4) return true;
+      for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n%i===0) return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
