@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="radius" placeholder="fill radius">
+    <button type="button" onclick="cal()">Calculate</button>
+    <p id="kq1"></p>
+    <p id="kq2"></p>
+    <script>
+      function cal() {
+        let radius = document.getElementById('radius').value;
+        result1 = diameter(radius).toFixed(2);
+        result2 = area(radius).toFixed(2);
+        document.getElementById('kq1').innerHTML = "chu vi của hình tròn = " + result1;
+        document.getElementById('kq2').innerHTML = "diện tích của hình tròn = " + result2;
+      }
+      function diameter(r) {
+        dia = 2*r*Math.PI;
+        return dia;
+      }
+      function area(r) {
+        areacircle = Math.pow(r,2)*Math.PI;
+        return areacircle;
+      }
+    </script>
+</body>
+</html>

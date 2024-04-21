@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n = +parseInt(prompt("number of arrays"));
+        let arrayInt = [];
+        for (let i = 0; i < n; i++) {
+            let randomNum = Math.floor(Math.random()*101);
+            arrayInt.push(randomNum);
+        }
+        document.write("original array: " + arrayInt + "<br>");
+        document.write("after converted: " + convert(arrayInt));
+        function convert(arr) {
+            for (let i = 0; i < arr.length/2 ; i++) {
+                tg = arr[i];
+                arr[i]=arr[arr.length-i-1];
+                arr[arr.length-i-1]=tg;
+            }
+            return arr;
+        }
+    </script>
+</body>
+</html>

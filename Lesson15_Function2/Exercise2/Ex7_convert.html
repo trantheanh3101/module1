@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("fill a");
+        let b = +prompt("fill b");
+        let array = [a,b];
+        document.write("after convert , we have:  array=[" + convert(a,b,array)+ "]")
+        function convert(m, n ,arr ) {
+            let tr = m;
+            m = n;
+            n = tr;
+            arr = [m,n];
+            return arr;
+        }
+    </script>
+</body>
+</html>

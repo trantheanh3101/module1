@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let num = +parseInt(prompt("number:"));
+    document.write("factorial of "+ num + " = " + calculate(num));
+    function calculate(n) {
+      let result1 = 1;
+      for (let i = 1; i <= n; i++) {
+            result1 = result1 * i;
+      }
+      return result1;
+    }
+  </script>
+</body>
+</html>

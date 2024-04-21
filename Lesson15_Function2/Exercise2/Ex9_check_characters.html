@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let array =[];
+        let num = parseInt(prompt("number of arrays"))
+        let item = "";
+
+        for (let i = 0; i < num; i++) {
+            item = prompt("nhập item thứ " + (i+1));
+            array.push(item);
+        }
+
+        let anychar = prompt("fill any character");
+        document.write("array input : " + array+ "<br>");
+        document.write("find value is :  " + anychar + "<br>");
+
+        let result = arraycharacter(anychar,array);
+        if (result !== -1) {
+            document.write("character " + anychar + " have " + result + " value");
+        } else {
+            document.write("array no have character same")
+        }
+          function arraycharacter(n, arr1) {
+            if (arr1.indexOf(n) !== -1) {
+                count = 0;
+                for (let i = 0; i < arr1.length; i++) {
+                    if (n == arr1[i]) {
+                        count++;
+                    }
+                }
+                return count;
+            } else return arr1.indexOf(n);
+        }
+    </script>
+</body>
+</html>

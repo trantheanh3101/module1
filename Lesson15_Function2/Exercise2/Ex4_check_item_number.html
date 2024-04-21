@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num = +parseFloat(prompt("fill number"));
+        document.write(checkNumber(num));
+        function checkNumber(n) {
+            if (!isNaN(n)){
+                return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
