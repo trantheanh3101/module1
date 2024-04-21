@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="num" placeholder="number" type="text">
+    <button type="button" onclick="calculate()">Calculate</button>
+    <p id="kq"></p>
+    <script>
+        function calculate() {
+            let num = document.getElementById('num').value;
+            document.getElementById('kq').innerHTML = "Bình phương của số " + num + " = " + square(num);
+            }
+        function square(num) {
+            result = Math.pow(num,2);
+            return result;
+        }
+    </script>
+</body>
+</html>

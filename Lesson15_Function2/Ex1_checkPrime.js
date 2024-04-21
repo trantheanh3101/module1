@@ -4,7 +4,7 @@ function prime() {
     let start = document.getElementById('start').value;
     let end = document.getElementById('end').value;
 
-    while (count<num && start<end){
+    while (count<num || start<end){
         if (checkPrime(start)){
             document.write(start + " ");
             count++;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="button" onclick="compare()">Compare</button>
+    <p id="kq"></p>
+    <script>
+        function compare() {
+            let x = +prompt('nhập số thứ 1 : ');
+            let y = +prompt('nhập số thứ 2 : ');
+            document.getElementById('kq').innerHTML = "Tổng của hai số là : " + func(x,y);
+        }
+        function func(a, b) {
+            if (a>b){
+                alert('giá trị a lớn hơn b')
+            } else {
+                sum = a + b;
+            }
+            return sum;
+        }
+    </script>
+</body>
+</html>

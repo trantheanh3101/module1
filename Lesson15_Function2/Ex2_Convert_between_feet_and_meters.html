@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html</title>
+</head>
+<body>
+    <input id="f" placeholder="foot">
+    <input id="m" placeholder="neter">
+    <button id="convert" type="button" onclick="convert()">Convert</button>
+    <p id="foot" ></p>
+    <p id="meter"></p>
+    <script>
+        // let foot1 = +parseFloat(prompt('nhâp foot: '));
+        function convert() {
+            let foot1 = document.getElementById('f').value;
+            document.getElementById('foot').innerHTML =  foot1 + " foot = " + convert_meter(foot1) + " meter ";
+
+            // let meter1= +parseFloat(prompt('nhâp meter: '));
+            let meter1 = document.getElementById('m').value;
+            document.getElementById('meter').innerHTML =  meter1 + " meter = "+ convert_foot(meter1) + " foot";
+        }
+        function convert_foot(meter) {
+            let foot = 3.279*meter;
+            return foot;
+        }
+        function convert_meter(foot){
+            let meter = 0.305*foot;
+            return meter;
+        }
+    </script>
+</body>
+</html>
