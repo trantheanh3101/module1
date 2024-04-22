@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <style>
+        fieldset{
+            border: 2px;
+            background-color: #b3b3b3;
+            border-radius: 5px;
+            padding: 30px;
+            width: 400px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        button{
+            padding: 10px 20px;
+            border: 1px solid white;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: green;
+            text-align: center;
+        }
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+        tr:nth-child(odd) td{
+            background-color: #f2f2f2;
+            padding-bottom:5px;
+            padding-top:5px;
+        }
+        tr:nth-child(even) td{
+            padding-bottom:5px;
+            padding-top:5px;
+        }
+    </style>
+</head>
+<body>
+<h3>Add New Product</h3>
+<fieldset>
+    <input id="product" placeholder="New Product">
+    <button type="button" onclick="addProduct()">Add</button>
+</fieldset>
+<h3>Display All Product</h3>
+<p id="kq"></p>
+<p id="kq1"></p>
+<table>
+    <tr>
+        <th style="text-align: left">Product Name</th>
+        <th colspan="2" style="text-align:right">products</th>
+    </tr>
+    <tr>
+        <td>Sony Xperia</td>
+        <td><button type="button" onclick="editProduct()">Edit</button></td>
+        <td><button type="button" onclick="deleteProduct()">Delete</button></td>
+    </tr>
+</table>
+<script src="Ex3_product_management.js"></script>
+</body>
+</html>
