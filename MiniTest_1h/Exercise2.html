@@ -6,8 +6,12 @@
 </head>
 <body>
     <script>
-        let averagre = prompt("point averagre student");
-        document.write("student rated : " + classification(averagre));
+        let poits = prompt("fill point ")
+        let arrayPoint = [5,8,3,8,9,4,6,3];
+        document.write("xếp loại điểm hs bất kì : " + classification(poits) + "<br>");
+        document.write("số lượng các loại điểm A,B,C tương ứng : " + checkRated(arrayPoint)+ "<br>");
+        document.write("averagePoint = " + average(arrayPoint));
+
         function classification(averPoint) {
             if (averPoint < 5){
                 rateds = "C";
@@ -17,6 +21,28 @@
                 rateds = "A";
             }
             return rateds;
+        }
+        function checkRated(arr) {
+            let a  = 0;
+            let b= 0;
+            let c = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (classification(arr[i]) === "A"){
+                    a++;
+                } else if (classification(arr[i]) === "B"){
+                    b++;
+                } else {
+                    c++;
+                }
+            }
+            return [a,b,c];
+        }
+        function average(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return aver = (sum /arr.length).toFixed(2);
         }
     </script>
 </body>
