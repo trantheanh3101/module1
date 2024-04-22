@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deleteArray</title>
+</head>
+<body>
+  <script>
+
+      let arrayOld = ["sony","samsung","apple","nokia","oppo"]
+      let itemDelete = prompt("fill item want delete");
+      document.write("arraynew[" + deleteItem(arrayOld,itemDelete) + "]" );
+    function deleteItem(arr, item) {
+        let arrayNew = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (item === arr[i]){
+                arr.splice(i,1);
+            }
+        }
+        arrayNew = arr;
+        return arrayNew;
+    }
+  </script>
+</body>
+</html>

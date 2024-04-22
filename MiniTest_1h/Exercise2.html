@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Points</title>
+</head>
+<body>
+    <script>
+        let averagre = prompt("point averagre student");
+        document.write("student rated : " + classification(averagre));
+        function classification(averPoint) {
+            if (averPoint < 5){
+                rateds = "C";
+            } else if (averPoint < 8){
+                rateds = "B";
+            } else {
+                rateds = "A";
+            }
+            return rateds;
+        }
+    </script>
+</body>
+</html>
