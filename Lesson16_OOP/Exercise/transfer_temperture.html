@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đôit nhiệt độ </title>
+</head>
+<body>
+    <p id="dF"></p>
+    <p id="dK"></p>
+    <script>
+        class Temperture {
+            constructor(tempC) {
+                this.tempC = tempC;
+            }
+            gettempC(){
+                return this.tempC;
+            }
+            getTempF(){
+                return 9*this.tempC/5 + 32;
+            }
+            getTempK(){
+                return this.tempC +273;
+            }
+
+            settempC(tempC){
+                return this.tempC = newtempC;
+            }
+        }
+
+        // khoi tao Object
+        let temperture = new Temperture(25);
+        let tempC = temperture.gettempC();
+        let tempF = temperture.getTempF();
+        let tempK = temperture.getTempK();
+
+        document.getElementById('dF').innerHTML =tempC + " độ C  = " + tempF + " độ F";
+        document.getElementById('dK').innerHTML =tempC + " độ C  = " + tempK + " độ K";
+    </script>
+</body>
+</html>

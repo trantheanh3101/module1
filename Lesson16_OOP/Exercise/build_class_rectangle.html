@@ -5,8 +5,51 @@
     <title>xây dựng lớp mô tả hình chữ nhật </title>
 </head>
 <body>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid black"></canvas>
+    <p id="cv"></p>
+    <p id="dt"></p>
     <script>
+        class Rectangle {
+            constructor(width,length) {
+                this.width = width;
+                this.length = length;
+            }
+            getWidth(){
+                return this.width;
+            }
+            getLength(){
+                return this.length;
+            }
+            getArea(){
+                return this.width * this.length;
+            }
+            getPerimeter(){
+                return 2*(this.length + this.width);
+            }
+            setWidth(newWidth){
+                this.width = newWidth;
+            }
+            setLength(newLength){
+                this.length = newLength;
+            }
+        }
+        let hcn = new Rectangle(50,90);
+        let width = hcn.getWidth();
+        let length = hcn.getLength();
 
+        let c = document.getElementById('myCanvas');
+        let ctx = c.getContext("2d");
+        ctx.fillStyle = '#c00e0e';
+        ctx.fillRect(5,5,length,width);
+
+        hcn.setLength(150);
+        hcn.setWidth(70);
+        width = hcn.getWidth();
+        length = hcn.getLength();
+        ctx.fillRect(5,5,length,width);
+
+        document.getElementById('cv').innerHTML = "chu vi hình chữ nhật : " + hcn.getPerimeter();
+        document.getElementById('dt').innerHTML = "diên tích hình chữ nhật: " + hcn.getArea();
     </script>
 </body>
 </html>
