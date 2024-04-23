@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let o = {};
+        // thay cho các thông thường:
+        //     let o = new Object();
+        // Đối với mảng, bạn khai báo như sau:
+        //     let a = [];
+        // Thay cho cách thông thường:
+        //     let a = new Array();
+
+        let apple = {
+            type: "macintosh",
+            color: "red",
+            getInfo: function () {
+                return this.color + ' ' + this.type + ' apple';
+            }
+        }
+        apple.color = "reddish";
+        alert(apple.getInfo());
+    </script>
+</body>
+</html>

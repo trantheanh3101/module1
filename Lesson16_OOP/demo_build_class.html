@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+       // cách 1: sau uu tien use
+        class Student {
+            constructor(code, name , address) {
+                this.code = code;
+                this.name = name;
+                this.address = address;
+            }
+
+
+            // phương thức method
+            dihoc(){
+                alert(this.name + "go to school ");
+            }
+            getInfo(){
+                return this.code + ' , ' + this.name + ' , ' + this.address;
+            }
+        }
+        let quyen = new Student(14," pvq "," Hue ");
+        document.write(quyen.code);
+        document.write(quyen.address);
+        document.write(quyen.name);
+        document.write("<br>");
+        quyen.dihoc();
+
+
+         // cach 2:  dung ham
+        function Student(code,name,address) {
+            this.code = code ;
+            this.name = name;
+            this.address = address;
+
+            // phương thức dùng ham
+            this.getInfo = function() {
+                return this.code + ' , ' + this.name + ' , ' + this.address;
+            };
+            this.dihoc = function (){
+                alert(this.name + "go to school ");
+            }
+        }
+        let quyen = new Student(14," pvq "," Hue ");
+        document.write(quyen.code);
+        document.write(quyen.address);
+        document.write(quyen.name);
+        document.write("<br>");
+        // quyen.dihoc();
+        document.write(quyen.getInfo());
+    </script>
+</body>
+</html>

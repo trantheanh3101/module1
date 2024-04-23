@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>build class circle</title>
+</head>
+<body>
+    <script>
+        //  xây dựng lớp hình tròn theo sơ đồ lớp
+        let Circle = function (radius,color){
+            this.radius = radius;
+            this.colors = color;
+
+            this.getRadius = function (){
+                return radius;
+            }
+            this.getColor = function (){
+                return color;
+            }
+            this.getArea = function() {
+                return Math.PI * radius * radius;
+            }
+        }
+
+        // khoi tao hinh tron circle
+
+        let circle = new Circle(3);
+        let radius = circle.getRadius();
+        let area = circle.getArea();
+
+        alert("hình tròn có bán kính: " + radius + " có diện tích : " + area);
+
+
+    </script>
+</body>
+</html>
