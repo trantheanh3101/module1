@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mini mobile</title>
+</head>
+<body>
+  <script>
+    function Mobile(id, name) {
+      this.id = id;
+      this.name = name;
+      this.messenger = messenger;
+
+      this.getMessenger = function () {
+        return this.messenger;
+      }
+      this.setMessenger = function (messenger) {
+          this.messenger = messenger;
+      }
+      
+      this.sendMessenger = function (messnger, mobile) {
+        mobile.setMessenger(messnger);
+      }
+    }
+
+    let iphone = new Mobile(1,"iphone6");
+    let samsung = new Mobile(2,"samsunggalaxy");
+    let messSendformIP = iphone.setMessenger("hi samsung");
+    iphone.sendMessenger(messSendformIP,samsung);
+    let messSamsung = samsung.getMessenger();
+    alert(messSamsung);
+
+  </script>
+</body>
+</html>
