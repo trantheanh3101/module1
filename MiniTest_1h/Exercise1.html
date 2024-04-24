@@ -6,14 +6,13 @@
 </head>
 <body>
   <script>
-
       let arrayOld = ["sony","samsung","apple","nokia","oppo"]
       let itemDelete = prompt("fill item want delete");
       document.write("arraynew[" + deleteItem(arrayOld,itemDelete) + "]" );
     function deleteItem(arr, item) {
         let arrayNew = [];
         for (let i = 0; i < arr.length; i++) {
-            if (item === arr[i]){
+            if (itemDelete === arr[i]){
                 arr.splice(i,1);
             }
         }

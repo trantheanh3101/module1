@@ -6,27 +6,25 @@
 </head>
 <body>
   <script>
-    function Mobile(id, name) {
+    function Mobile(id, name,messenger) {
       this.id = id;
       this.name = name;
       this.messenger = messenger;
 
+      this.setMessenger = function (messenger) {
+            this.messenger = messenger;
+      }
       this.getMessenger = function () {
         return this.messenger;
       }
-      this.setMessenger = function (messenger) {
-          this.messenger = messenger;
-      }
-      
-      this.sendMessenger = function (messnger, mobile) {
-        mobile.setMessenger(messnger);
+      this.sendMessenger = function (messenger, mobile) {
+        mobile.setMessenger(messenger);
       }
     }
 
     let iphone = new Mobile(1,"iphone6");
     let samsung = new Mobile(2,"samsunggalaxy");
-    let messSendformIP = iphone.setMessenger("hi samsung");
-    iphone.sendMessenger(messSendformIP,samsung);
+    iphone.sendMessenger("hi samsung",samsung);
     let messSamsung = samsung.getMessenger();
     alert(messSamsung);
 
