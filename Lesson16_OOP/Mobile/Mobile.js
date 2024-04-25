@@ -6,18 +6,15 @@ class Mobile {
         this.inbox = [];
         this.sentMessages = [];
     }
-
     checkPowerStatus() {
         return this.powerOn;
     }
-
     powerToggle() {
         this.powerOn = !this.powerOn;
         if (!this.powerOn) {
             console.log("Điện thoại đã tắt.");
         }
     }
-
     chargeBattery() {
         if (this.powerOn) {
             this.battery = 100;
@@ -26,7 +23,6 @@ class Mobile {
             console.log("Điện thoại phải được bật để sạc pin.");
         }
     }
-
     composeMessage(message) {
         if (this.powerOn) {
             this.draftMessage = message;
@@ -36,7 +32,6 @@ class Mobile {
             console.log("Điện thoại phải được bật để soạn tin nhắn.");
         }
     }
-
     receiveMessage(message) {
         if (this.powerOn) {
             this.inbox.push(message);
@@ -46,7 +41,6 @@ class Mobile {
             console.log("Điện thoại phải được bật để nhận tin nhắn.");
         }
     }
-
     sendMessage(message, recipient) {
         if (this.powerOn) {
             recipient.receiveMessage(message);
@@ -57,7 +51,6 @@ class Mobile {
             console.log("Điện thoại phải được bật để gửi tin nhắn.");
         }
     }
-
     viewInbox() {
         if (this.powerOn) {
             console.log("Hộp thư đến:");
@@ -69,7 +62,6 @@ class Mobile {
             console.log("Điện thoại phải được bật để xem hộp thư đến.");
         }
     }
-
     viewSentMessages() {
         if (this.powerOn) {
             console.log("Tin nhắn đã gửi:");
@@ -81,14 +73,12 @@ class Mobile {
             console.log("Điện thoại phải được bật để xem tin nhắn đã gửi.");
         }
     }
-
     decreaseBattery() {
         if (this.powerOn && this.battery > 0) {
             this.battery--;
         }
     }
 }
-
 // Sử dụng lớp Mobile:
 const myPhone = new Mobile();
 myPhone.powerToggle(); // Bật điện thoại
