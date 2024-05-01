@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="CodeTestNewLesson" />
+    <orderEntry type="module" module-name="CaseStadyModule1" />
   </component>
 </module>
