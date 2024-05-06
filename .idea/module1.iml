@@ -10,5 +10,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="CodeTestNewLesson" />
     <orderEntry type="module" module-name="CaseStadyModule1" />
+    <orderEntry type="module" module-name="HackerRank" />
+    <orderEntry type="module" module-name="Library" />
+    <orderEntry type="module" module-name="Tran_The_Anh_Exam_module1_C03" />
   </component>
 </module>

@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../CaseStadyModule1/.idea/CaseStadyModule1.iml" filepath="$PROJECT_DIR$/../CaseStadyModule1/.idea/CaseStadyModule1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../CodeTestNewLesson/.idea/CodeTestNewLesson.iml" filepath="$PROJECT_DIR$/../CodeTestNewLesson/.idea/CodeTestNewLesson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HackerRank/.idea/HackerRank.iml" filepath="$PROJECT_DIR$/../HackerRank/.idea/HackerRank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Library/.idea/Library.iml" filepath="$PROJECT_DIR$/../Library/.idea/Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Tran_The_Anh_Exam_module1_C03/.idea/Tran_The_Anh_Exam_module1_C03.iml" filepath="$PROJECT_DIR$/../Tran_The_Anh_Exam_module1_C03/.idea/Tran_The_Anh_Exam_module1_C03.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/module1.iml" filepath="$PROJECT_DIR$/.idea/module1.iml" />
     </modules>
   </component>

@@ -24,7 +24,7 @@ function addProduct() {
 function editProduct(edit) {
     let row = edit.parentNode.parentNode;
     let productName = row.cells[0].textContent;
-    newname = prompt("tên sản phẩm" + productName + " đổi thành: ");
+    let newname = prompt("tên sản phẩm" + productName + " đổi thành: ");
     for (let i = 0; i < array_product.length; i++) {
         if (productName === array_product[i]){
             array_product[i] = newname;
